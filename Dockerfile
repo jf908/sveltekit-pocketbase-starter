@@ -5,7 +5,7 @@ RUN npx pnpm install && npm run build && npm run hooks:build
 
 FROM alpine:latest
 
-ARG PB_VERSION=0.22.9
+ARG PB_VERSION=0.22.13
 
 RUN apk add --no-cache \
     unzip \
