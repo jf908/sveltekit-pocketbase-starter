@@ -10,7 +10,8 @@ export default defineConfig({
     proxy: {
       // proxy "/api" and "/_" to pocketbase_url
       '/api': pocketbase_url,
-      '/_': pocketbase_url,
+      // Conflicts with uno.css
+      // '/_': pocketbase_url,
     },
   },
 });
